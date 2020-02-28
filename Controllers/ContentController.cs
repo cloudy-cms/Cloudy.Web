@@ -21,7 +21,7 @@ namespace CloudyWeb.Controllers
         {
             var page = SingletonGetter.Get<StartPage>(null);
 
-            return View("StartPage", page.Name);
+            return View("StartPage", page);
         }
     }
 }
