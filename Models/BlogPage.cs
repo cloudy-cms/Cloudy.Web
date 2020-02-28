@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CloudyWeb.Models
+namespace Cloudy.Web.Models
 {
     [ContentType("b5417718-81a3-4d06-a5d7-c6b8b40915df")]
     public class BlogPage : IContent, IRoutable, IHierarchical, INameable

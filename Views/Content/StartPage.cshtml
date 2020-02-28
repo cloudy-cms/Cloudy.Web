@@ -1,0 +1,68 @@
+﻿@using Cloudy.Web.Extensions
+@using Cloudy.Web.Models
+
+@model StartPage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.WindowTitle</title>
+    <link rel="stylesheet" href="~/Styles/main.css" />
+    <link rel="icon" type="image/png" sizes="150x150" href="~/Images/cloudy-favicon.png">
+</head>
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140913146-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140913146-1');
+    </script>
+    <header>
+        <div class="container">
+            <header-logo></header-logo>
+            <header-title>Cloudy</header-title>
+            <a class="header-link" href="https://github.com/cloudy-cms/Cloudy.CMS">Github</a>
+        </div>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <hero-cloud></hero-cloud>
+            <h1 class="heading">@Model.Heading</h1>
+            <div class="intro">
+                @Html.AddParagraphs(Model.Intro)
+            </div>
+        </section>
+        <sepa-rator>
+            <separator-fold title="This is a fold."></separator-fold>
+        </sepa-rator>
+        <section>
+            <ul class="usp-list">
+                @foreach (var item in Model.Usps ?? Enumerable.Empty<StartPage.Usp>())
+                {
+                    <li class="usp-item">
+                        <h3 class="usp-heading">@item.Heading</h3>
+                        <div class="usp-text">
+                            @Html.AddParagraphs(item.Text)
+                        </div>
+                    </li>
+                }
+            </ul>
+        </section>
+        <sepa-rator></sepa-rator>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="legalese">@Html.AddParagraphs(Model.Legal)</div>
+        </div>
+    </footer>
+</body>
+</html>

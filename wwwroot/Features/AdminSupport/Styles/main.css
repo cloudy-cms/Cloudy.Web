@@ -1,0 +1,140 @@
+﻿/* VARIABLES */
+/* GLOBAL ELEMENTS */
+html {
+  transition: font-size 0.2s;
+  background: #215b7d; }
+
+@media (max-width: 319px) {
+  html {
+    font-size: 14px; } }
+
+@media (max-width: 239px) {
+  html {
+    font-size: 12px; } }
+
+body {
+  margin: 0;
+  background: white;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 125%; }
+
+label {
+  display: block;
+  cursor: pointer; }
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-weight: inherit;
+  border-radius: 0; }
+
+::selection {
+  background: #0058ad;
+  color: white; }
+
+/* BUTTON */
+poetry-ui-button,
+.poetry-ui-button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  border: none;
+  background: #0058ad;
+  color: white;
+  line-height: 1;
+  cursor: pointer;
+  transition: filter 0.2s; }
+  poetry-ui-button:hover,
+  .poetry-ui-button:hover {
+    background: #003e7a; }
+  poetry-ui-button:focus,
+  .poetry-ui-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(0, 88, 173, 0.25); }
+  poetry-ui-button.poetry-ui-active,
+  .poetry-ui-button.poetry-ui-active {
+    background: #003161; }
+  poetry-ui-button[disabled],
+  .poetry-ui-button[disabled] {
+    filter: grayscale(100%);
+    cursor: default; }
+    poetry-ui-button[disabled]:focus,
+    .poetry-ui-button[disabled]:focus {
+      box-shadow: none; }
+    poetry-ui-button[disabled]:hover,
+    .poetry-ui-button[disabled]:hover {
+      background: #0058ad; }
+
+.login-form-outer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px; }
+
+.login-form {
+  display: block;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
+
+.buttons-outer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.poetry-ui-button {
+  margin-left: auto;
+  border: none;
+  font-size: 1rem; }
+
+.validation-message {
+  margin-right: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #b00000; }
+
+/* FORM */
+.poetry-ui-form {
+  margin-bottom: 20px; }
+
+/* FIELD */
+.poetry-ui-form-field {
+  margin: 0;
+  padding: 0;
+  border: none; }
+  .poetry-ui-form-field + .poetry-ui-form-field {
+    margin-top: 20px; }
+
+fieldset.poetry-ui-form-field {
+  min-inline-size: unset; }
+
+/* LABEL */
+.poetry-ui-form-field-label {
+  margin: 0 2px 5px;
+  display: block;
+  padding: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase; }
+
+/* INPUT */
+.poetry-ui-form-input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 5px;
+  border: solid 1px #ccc;
+  box-sizing: border-box;
+  background: white;
+  transition: background-color 0.2s;
+  font-size: 80%; }
+  .poetry-ui-form-field.poetry-ui-simple:hover .poetry-ui-form-input, .poetry-ui-form-input:hover {
+    background: #f1f1f1; }
+  .poetry-ui-form-input:focus {
+    outline: none;
+    border-color: rgba(0, 88, 173, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(0, 88, 173, 0.25); }

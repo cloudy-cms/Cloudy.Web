@@ -2,17 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>CloudyWeb</RootNamespace>
+    <RootNamespace>Cloudy.Web</RootNamespace>
     <UserSecretsId>996c4743-b49a-4eaf-9a81-732d48c06657</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Cloudy.CMS" Version="1.41.5" />
     <PackageReference Include="Cloudy.CMS.UI" Version="1.41.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 

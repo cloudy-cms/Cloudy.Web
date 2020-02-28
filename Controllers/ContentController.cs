@@ -1,5 +1,5 @@
 ﻿using Cloudy.CMS.SingletonSupport;
-using CloudyWeb.Models;
+using Cloudy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace CloudyWeb.Controllers
         {
             var page = SingletonGetter.Get<StartPage>(null);
 
-            return Content(page.Name);
+            return View("StartPage", page.Name);
         }
     }
 }

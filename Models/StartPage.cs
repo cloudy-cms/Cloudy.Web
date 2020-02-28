@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CloudyWeb.Models
+namespace Cloudy.Web.Models
 {
     [Display(Name = "Start page")]
     [Singleton("3664d115-2000-4d77-af7f-0a72dd6dca9b")]
