@@ -1,0 +1,57 @@
+{
+  "Id": "3664d115-2000-4d77-af7f-0a72dd6dca9b",
+  "GlobalFacet": {
+    "Language": "*",
+    "Interfaces": {
+      "IContent": {
+        "Id": "IContent",
+        "Properties": {
+          "Id": "3664d115-2000-4d77-af7f-0a72dd6dca9b",
+          "ContentTypeId": "fa07d535-c10c-44a2-ac75-666f33ffa9f2"
+        }
+      },
+      "IRoutable": {
+        "Id": "IRoutable",
+        "Properties": {
+          "UrlSegment": null
+        }
+      },
+      "IHierarchical": {
+        "Id": "IHierarchical",
+        "Properties": {
+          "ParentId": null
+        }
+      }
+    },
+    "Properties": {
+      "Name": "Cloudy CMS",
+      "WindowTitle": "Cloudy .NET CMS",
+      "Heading": "Finally—an effective CMS, optimized for the cloud.",
+      "Intro": null,
+      "Usps": [
+        {
+          "Heading": "Effective",
+          "Text": "Works on Azure, AWS, GCE.\nRuns on Windows, Linux, and Mac OS.\nSupports MongoDB, Cosmos, and DocumentDB."
+        },
+        {
+          "Heading": "Code-first, strongly typed models",
+          "Text": "Still making models with your mouse?! 😱\nThe 90's called—they want their CMS back."
+        },
+        {
+          "Heading": "Portal-like UI",
+          "Text": "The portal you know and love, blades and all.\nMakes working on mobile easy."
+        },
+        {
+          "Heading": "Extensible",
+          "Text": "Easy to extend. Bring your own library.\nWe run on native ES6, without transpiling."
+        },
+        {
+          "Heading": "Open Source",
+          "Text": "All of our code is available on Github, with packages on Nuget."
+        }
+      ],
+      "Legal": "Cloudy CMS is a product by Bjorn Goransson Invest AB.\nCompany ISIN: SE559204344101\nContact:\n+46-700-48-2995\nbjorn.a.goransson@gmail.com\n2019 © Bjorn Goransson Invest AB"
+    }
+  },
+  "LanguageFacets": {}
+}
