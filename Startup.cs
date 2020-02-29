@@ -25,7 +25,6 @@ namespace Cloudy.Web
         {
             services.AddMvc();
             services.AddCloudy(configure => configure
-                .AddContentRoute()
                 .AddAdmin()
                 .WithFileBasedDocuments()
                 //.WithMongoDatabaseConnectionStringNamed("cloudy")
@@ -37,6 +36,7 @@ namespace Cloudy.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCloudyAdmin(configure => configure.Unprotect());
             }
             else
             {
@@ -46,8 +46,6 @@ namespace Cloudy.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
-            app.UseCloudyAdmin(configure => configure.Unprotect());
 
             app.UseRouting();
             app.UseAuthorization();
