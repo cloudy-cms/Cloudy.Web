@@ -1,0 +1,33 @@
+{
+  "Id": "491f0f0a-6b1d-4c27-abe0-8f8a2cc6e44a",
+  "GlobalFacet": {
+    "Language": "*",
+    "Interfaces": {
+      "IContent": {
+        "Id": "IContent",
+        "Properties": {
+          "Id": "491f0f0a-6b1d-4c27-abe0-8f8a2cc6e44a",
+          "ContentTypeId": "157d1342-8ae6-4718-9127-2484425e0666"
+        }
+      },
+      "IRoutable": {
+        "Id": "IRoutable",
+        "Properties": {
+          "UrlSegment": "content-list-no-properties"
+        }
+      }
+    },
+    "Properties": {
+      "Name": "Content list: No properties",
+      "Heading": "No {contentTypeLowerCasePluralName}, no properties … yet",
+      "Image": {
+        "Src": "https://cloudycms.blob.core.windows.net/helpsectionimages/undraw_suburbs_8b83.svg",
+        "Alt": "Illustration of a row of houses."
+      },
+      "Text": "<p>Your content type looks a bit empty. Let's add some properties!</p>\n<p>Try implementing INameable:</p>",
+      "Actions": [],
+      "Code": "public class MyClass : …, INameable\n{\n    …\n    public string Name { get; set; }\n}"
+    }
+  },
+  "LanguageFacets": {}
+}

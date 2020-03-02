@@ -18,7 +18,7 @@
       }
     },
     "Properties": {
-      "Name": "When content list is empty",
+      "Name": "Content list: Empty",
       "Heading": "There's nothing here",
       "Image": {
         "Src": "https://cloudycms.blob.core.windows.net/helpsectionimages/undraw_remotely_2j6y.svg",
@@ -30,7 +30,8 @@
           "Id": "createNew",
           "Text": "Create new {contentTypeLowerCaseName}"
         }
-      ]
+      ],
+      "Code": null
     }
   },
   "LanguageFacets": {}
