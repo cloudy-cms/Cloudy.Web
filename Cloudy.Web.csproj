@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cloudy.CMS" Version="1.42.15" />
-    <PackageReference Include="Cloudy.CMS.UI" Version="1.42.15" />
+    <PackageReference Include="Cloudy.CMS" Version="1.42.18" />
+    <PackageReference Include="Cloudy.CMS.UI" Version="1.42.18" />
   </ItemGroup>
 
 
