@@ -24,6 +24,8 @@ namespace Cloudy.Web.Models
         [UIHint("textarea({rows:3})")]
         public string Text { get; set; }
         public IEnumerable<ActionButton> Actions { get; set; }
+        [UIHint("textarea({rows:3})")]
+        public string Code { get; set; }
 
         [Form("126dac6a-6dc4-4208-9f35-772342714e8b")]
         public class ImageReference
