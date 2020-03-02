@@ -24,7 +24,7 @@
         "Src": "https://cloudycms.blob.core.windows.net/helpsectionimages/undraw_remotely_2j6y.svg",
         "Alt": "Illustration of a row of houses."
       },
-      "Text": "You haven’t created any {contentTypeLowerCasePluralName} yet. Let’s do it!",
+      "Text": "<p>You haven’t created any {contentTypeLowerCasePluralName} yet. Let’s do it!</p>",
       "Actions": [
         {
           "Id": "createNew",
