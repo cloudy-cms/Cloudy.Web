@@ -23,6 +23,7 @@ namespace Cloudy.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => options.AddPolicy("allow-all", builder => builder.AllowAnyOrigin()));
             services.AddMvc();
             services.AddCloudy(configure => configure
                 .AddAdmin()
@@ -48,10 +49,12 @@ namespace Cloudy.Web
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseCors();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(null, "/", new { controller = "Content", action = "StartPage" });
+                endpoints.MapControllerRoute(null, "/help-sections/{id:contentroute}.json", new { controller = "Content", action = "HelpSection" }).RequireCors("allow-all");
             });
         }
     }

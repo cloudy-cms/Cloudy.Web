@@ -1,0 +1,37 @@
+{
+  "Id": "97f13c80-d78c-4f6c-94dc-260abe3c3f74",
+  "GlobalFacet": {
+    "Language": "*",
+    "Interfaces": {
+      "IContent": {
+        "Id": "IContent",
+        "Properties": {
+          "Id": "97f13c80-d78c-4f6c-94dc-260abe3c3f74",
+          "ContentTypeId": "157d1342-8ae6-4718-9127-2484425e0666"
+        }
+      },
+      "IRoutable": {
+        "Id": "IRoutable",
+        "Properties": {
+          "UrlSegment": "content-list-empty"
+        }
+      }
+    },
+    "Properties": {
+      "Name": "When content list is empty",
+      "Heading": "There's nothing here",
+      "Image": {
+        "Src": "https://cloudycms.blob.core.windows.net/helpsectionimages/undraw_remotely_2j6y.svg",
+        "Alt": "Illustration of a row of houses."
+      },
+      "Text": "You haven’t created any {contentTypeLowerCasePluralName} yet. Let’s do it!",
+      "Actions": [
+        {
+          "Id": "createNew",
+          "Text": "Create new {contentTypeLowerCaseName}"
+        }
+      ]
+    }
+  },
+  "LanguageFacets": {}
+}

@@ -1,4 +1,5 @@
-﻿using Cloudy.CMS.SingletonSupport;
+﻿using Cloudy.CMS.ModelBinding;
+using Cloudy.CMS.SingletonSupport;
 using Cloudy.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -22,6 +23,11 @@ namespace CloudyWeb.Controllers
             var page = SingletonGetter.Get<StartPage>(null);
 
             return View("StartPage", page);
+        }
+
+        public ActionResult HelpSection([FromContentRoute] HelpSection content)
+        {
+            return Json(content);
         }
     }
 }
