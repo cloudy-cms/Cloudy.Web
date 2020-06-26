@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloudy.CMS", "..\cloudy-cms\Cloudy.CMS\Cloudy.CMS.csproj", "{3D9DEB99-C557-454A-A3E1-6675C30DDE66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloudy.CMS.UI", "..\cloudy-cms\Cloudy.CMS.UI\Cloudy.CMS.UI.csproj", "{6B3B6911-91A8-4967-9E8F-ED68EE1D6BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +26,14 @@ Global
 		{9F8FB470-3F21-4EF2-93F5-D9AE14E46E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8FB470-3F21-4EF2-93F5-D9AE14E46E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F8FB470-3F21-4EF2-93F5-D9AE14E46E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9DEB99-C557-454A-A3E1-6675C30DDE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9DEB99-C557-454A-A3E1-6675C30DDE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9DEB99-C557-454A-A3E1-6675C30DDE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9DEB99-C557-454A-A3E1-6675C30DDE66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3B6911-91A8-4967-9E8F-ED68EE1D6BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3B6911-91A8-4967-9E8F-ED68EE1D6BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3B6911-91A8-4967-9E8F-ED68EE1D6BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3B6911-91A8-4967-9E8F-ED68EE1D6BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
