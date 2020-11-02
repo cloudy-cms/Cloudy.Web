@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using Cloudy.CMS;
 using Cloudy.CMS.DocumentSupport.FileSupport;
 using Cloudy.CMS.UI.IdentitySupport;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,8 +30,8 @@ namespace Cloudy.Web
             services.AddCors(options => options.AddPolicy("allow-all", builder => builder.AllowAnyOrigin()));
             services.AddMvc();
             services.AddCloudyIdentity();
-            services.AddCloudy(configure => configure
-                .AddAdmin()
+            services.AddCloudy(cloudy => cloudy
+                .AddAdmin()//admin => admin.Unprotect())
                 .AddFileBasedDocuments()
             );
         }
@@ -53,6 +55,7 @@ namespace Cloudy.Web
             app.UseRouting();
             app.UseCors();
             app.UseAuthorization();
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 if (env.IsDevelopment())

@@ -18,9 +18,9 @@ namespace CloudyWeb.Controllers
             SingletonGetter = singletonGetter;
         }
 
-        public ActionResult StartPage()
+        public async Task<ActionResult> StartPage()
         {
-            var page = SingletonGetter.Get<StartPage>(null);
+            var page = await SingletonGetter.GetAsync<StartPage>(null);
 
             return View("StartPage", page);
         }
